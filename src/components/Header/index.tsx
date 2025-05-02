@@ -49,7 +49,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed left-0 top-0 w-full z-9999 bg-white transition-all ease-in-out duration-300 ${
+      className={`fixed left-0 top-0 w-full z-9999 bg-white dark:bg-dark-2 transition-all ease-in-out duration-300 ${
         stickyMenu && "shadow"
       }`}
     >
@@ -71,13 +71,12 @@ const Header = () => {
               />
             </Link>
 
-            <div className="max-w-[475px] w-full">
+           {/*  <div className="max-w-[475px] w-full">
               <form>
                 <div className="flex items-center">
                   <CustomSelect options={options} />
 
                   <div className="relative max-w-[333px] sm:min-w-[333px] w-full">
-                    {/* <!-- divider --> */}
                     <span className="absolute left-0 top-1/2 -translate-y-1/2 inline-block w-px h-5.5 bg-gray-4"></span>
                     <input
                       onChange={(e) => setSearchQuery(e.target.value)}
@@ -112,7 +111,7 @@ const Header = () => {
                   </div>
                 </div>
               </form>
-            </div>
+            </div> */}
           </div>
 
           {/* <!-- header top right --> */}

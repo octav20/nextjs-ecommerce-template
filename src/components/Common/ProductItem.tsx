@@ -46,7 +46,7 @@ const ProductItem = ({ item }: { item: Product }) => {
   };
 
   return (
-    <div className="group">
+    <div onClick={()=>{openModal()}} className="group">
       <div className="relative overflow-hidden flex items-center justify-center rounded-lg bg-[#F6F7FB] min-h-[270px] mb-4">
         <Image src={item.imgs.previews[0]} alt="" width={250} height={250} />
 
